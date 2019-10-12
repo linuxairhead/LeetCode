@@ -152,10 +152,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
-    <ClCompile Include="TreeNodeClass.cpp" />
+    <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="LeetCodeTree.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TreeNodeClass.h" />
+    <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="LeetCodeTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

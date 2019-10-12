@@ -1,0 +1,14 @@
+﻿  BinarySearchTree.cpp
+  LeetCode.cpp
+  LeetCodeTree.cpp
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): error C2440: 'return': cannot convert from 'int' to 'std::vector<TreeNode *,std::allocator<_Ty>>'
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): error C2440:         with
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): error C2440:         [
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): error C2440:             _Ty=TreeNode *
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): error C2440:         ]
+  Generating Code...
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): message : Constructor for class 'std::vector<TreeNode *,std::allocator<_Ty>>' is declared 'explicit'
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): message :         with
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): message :         [
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): message :             _Ty=TreeNode *
+C:\Users\ckhong76\source\repos\LeetCode\LeetCodeTree.cpp(17,14): message :         ]
