@@ -6,7 +6,7 @@ using namespace std;
 
 void BinarySearchTree::insertVectorListTreeNode(TreeNode*& tn, vector<int> list) {
 
-	cout << "inserted list of node to tree\n";
+	cout << "inserted list of node to tree" << endl;
 	for (auto i : list) {
 		this->insertTreeNode(tn, i);
 	}

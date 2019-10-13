@@ -1,3 +1,6 @@
+#ifndef TreeNode_HEADER
+#define TreeNode_HEADER
+
 struct TreeNode {
 	int data;
 	TreeNode* left;
@@ -5,6 +8,10 @@ struct TreeNode {
 
 	TreeNode(int d) : data(d), left(nullptr), right(nullptr) {}
 };
+#endif
+
+#ifndef BinarySearchTree_HEADER
+#define BinarySearchTree_HEADER
 
 class BinarySearchTree{
 private:
@@ -31,3 +38,4 @@ public:
 
 	int maxDepth(TreeNode*);
 };
+#endif
