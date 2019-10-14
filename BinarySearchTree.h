@@ -14,17 +14,16 @@ struct TreeNode {
 #define BinarySearchTree_HEADER
 
 class BinarySearchTree{
-private:
-	
+public:
 	void printTreeTester(TreeNode*);
 
 	void getTreeSizeTester(TreeNode*);
 
 	void getTreeMaxDepthTester(TreeNode*);
 
-public:
+	void insertBSTNode(TreeNode*&, int);
 
-	void tester();
+	void insertVectorListBSTNode(TreeNode*&, std::vector<int>);
 
 	void insertTreeNode(TreeNode*&, int);
 

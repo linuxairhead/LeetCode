@@ -32,5 +32,8 @@
     <ClInclude Include="LeetCodeTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LeetCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
