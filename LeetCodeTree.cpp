@@ -4,6 +4,42 @@
 LeetCodeTree::LeetCodeTree() {
 	
 }
+
+/* LeetCode #96 
+   Given n, how many structurally unique BST's (binary search trees)
+   that store values 1 ... n?
+
+   idea - dynamic programming
+   n = 1 then  1
+   n = 2 then 1-2 or 2-1 so 2
+   n = 3 then (1)-2r-3r, (1)-3r-2l,  1l-(2)-3r, (3)-1l-2l, (3)-2l-1r
+		() root number,
+		r  right of root
+		l  left of root
+
+   G(3) =   F(1,3)   +   F(2,3)   +   F(3,3) --> F(root, given n)
+        = G(0) * G(2) + G(1) * G(1) + G(2) * G(0)
+
+   Cartesian Product	
+   F(i, n) = G(i-1) * G(n-i)
+
+   Time Complexity O(n^2)
+   Space Complexity O(n)
+
+*/
+int LeetCodeTree::numUniqueBST(int num) {
+
+	vector<int> unique(num + 1, 1);
+	unique[0] = unique[1] = 1;
+
+	for (int i = 2; i <=num; i++) 
+		for (int j = 0 ; j < i; j++)
+			unique[i] += unique[j] * unique[i-j-1];
+	
+	return unique[num];
+}
+/* LeetCode #96 End */
+
 /* LeetCode #173 
    Implement an iterator over a binary search tree (BST).
    Your iterator will be initialized with the root node of a BST

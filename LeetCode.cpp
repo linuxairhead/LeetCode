@@ -49,6 +49,13 @@ void LeetCode::BSTtester() {
 	}
 }
 
+void LeetCode::UniqueBSTTester() {
+	LeetCodeTree lct;
+	for (int i : {1, 2, 3, 4, 5, 6, 7, 8}) 
+		cout << "Unique BST for " << i << " node are " << lct.numUniqueBST(i) << endl;
+	
+}
+
 void LeetCode::nextBSTTester() {
 	vector<int> v = { 7, 15, 3, 9, 20 };
 	BinarySearchTree bst;
@@ -92,6 +99,7 @@ int main()
 
     cout << "LeetCode C++ Tester!" << endl;
 	while (1) {
+		cout << "LeetCode   96. Unique BST" << endl;
 		cout << "LeetCode  173. Binary Search Tree Iterator" << endl;
 		cout << "LeetCode 1110. Delete Node And Return Forest" << endl;
 		cout << "Please select which LeetCode would you like to test --> ";
@@ -101,6 +109,10 @@ int main()
 		switch (choice) {
 		case 0:
 			lc.BSTtester();
+			break;
+
+		case  96:
+			lc.UniqueBSTTester();
 			break;
 
 		case  173:

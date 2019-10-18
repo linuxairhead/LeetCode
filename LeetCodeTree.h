@@ -18,6 +18,9 @@ private:
 	/* LeetCode #1110 End */
 public:
 	LeetCodeTree();
+	/* LeetCode #96 */
+	int numUniqueBST(int);
+	/* LeetCode #96 End */
 
 	/* LeetCode #173 */
 	LeetCodeTree(TreeNode*);
