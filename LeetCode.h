@@ -1,6 +1,8 @@
 class LeetCode {
 
 public:
+	void searchInsertTester();
+
 	void BSTtester();
 
 	void UniqueBSTTester();

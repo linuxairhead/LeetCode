@@ -5,6 +5,7 @@
 #include <iostream>
 #include "LeetCode.h"
 #include "LeetCodeTree.h"
+#include "LeetCodeArray.h"
 #include "BinarySearchTree.h"
 
 using namespace std;
@@ -47,6 +48,13 @@ void LeetCode::BSTtester() {
 		}
 		cout << endl;
 	}
+}
+
+void LeetCode::searchInsertTester() {
+	LeetCodeArray lca;
+	vector<int> inputV = { 1, 3, 5, 6 };
+	int inputNum = 5;
+	cout << " the num " << inputNum << " will be insert at location " << lca.searchInsert(inputV, inputNum) << endl;
 }
 
 void LeetCode::UniqueBSTTester() {
@@ -99,6 +107,7 @@ int main()
 
     cout << "LeetCode C++ Tester!" << endl;
 	while (1) {
+		cout << "LeetCode   35. Search Insert Position" << endl;
 		cout << "LeetCode   96. Unique BST" << endl;
 		cout << "LeetCode  173. Binary Search Tree Iterator" << endl;
 		cout << "LeetCode 1110. Delete Node And Return Forest" << endl;
@@ -109,6 +118,10 @@ int main()
 		switch (choice) {
 		case 0:
 			lc.BSTtester();
+			break;
+
+		case 35:
+			lc.searchInsertTester();
 			break;
 
 		case  96:
