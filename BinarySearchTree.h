@@ -36,5 +36,7 @@ public:
 	int sizeTree(TreeNode*);
 
 	int maxDepth(TreeNode*);
+
+	static void BSTtester();
 };
 #endif

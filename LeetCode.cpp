@@ -6,47 +6,26 @@
 #include "LeetCode.h"
 #include "LeetCodeTree.h"
 #include "LeetCodeArray.h"
+#include "LeetCodeString.h"
 #include "BinarySearchTree.h"
 
 using namespace std;
 
-void LeetCode::BSTtester() {
-
-	vector<int> list = { 1, 2, 3, 4, 5 };
-	TreeNode* root = NULL;
-	BinarySearchTree bst;
+void LeetCode::basicFunctionTester() {
 	int choice;
 
-	while (1) {
-		cout << "This is Binary Search Tree Tester\n";
-		cout << "1.    insert\n";
-		cout << "2.    print Tree\n";
-		cout << "3.    print Number of Node\n";
-		cout << "4.    print Max Depth of Tree\n";
-		cout << "5.    Check for Node in Tree\n";
-		cout << " Please chose your choise----------->";
-		cin >> choice;
+	cout << endl;
+	cout << "1. Binary Search Tree test" << endl;
+	cout << "2. String test" << endl;
+	cout << "Please select which basic function would you like to test ->";
+	cin >> choice;
 
-		switch (choice) {
-		case 1:
-			bst.insertVectorListTreeNode(root, list);
-			break;
-		case 2:
-			bst.printTreeTester(root);
-			break;
-		case 3:
-			bst.getTreeSizeTester(root);
-			break;
-		case 4:
-			bst.getTreeMaxDepthTester(root);
-			break;
-		case 5:
-			cout << " Enter the node number -->";
-			cin >> choice;
-			string s = bst.lookupTreeNode(root, choice) ? "has " : "don't have ";
-			cout << "the tree " << s << " node " << choice;
-		}
-		cout << endl;
+	switch (choice) {
+	case 1: BinarySearchTree::BSTtester();
+		break;
+	case 2: LeetCodeString s;
+		s.StringTester();
+		break;
 	}
 }
 
@@ -104,20 +83,22 @@ void LeetCode::delNodesTester() {
 int main()
 {
 	int choice;
-
-    cout << "LeetCode C++ Tester!" << endl;
+	
 	while (1) {
-		cout << "LeetCode   35. Search Insert Position" << endl;
-		cout << "LeetCode   96. Unique BST" << endl;
-		cout << "LeetCode  173. Binary Search Tree Iterator" << endl;
-		cout << "LeetCode 1110. Delete Node And Return Forest" << endl;
+		cout << "<<<<<<<<<<<<<<<  LeetCode C++ Tester! >>>>>>>>>>>>>>>" << endl << endl;
+		cout << "   0. Basic Function Tester " << endl;
+		cout << "  35. Search Insert Position" << endl;
+		cout << "  96. Unique BST" << endl;
+		cout << " 173. Binary Search Tree Iterator" << endl;
+		cout << " 344. Reverse String" << endl;
+		cout << "1110. Delete Node And Return Forest" << endl;
 		cout << "Please select which LeetCode would you like to test --> ";
 		cin >> choice;
 		LeetCode lc;
 
 		switch (choice) {
 		case 0:
-			lc.BSTtester();
+			lc.basicFunctionTester();
 			break;
 
 		case 35:
@@ -131,6 +112,7 @@ int main()
 		case  173:
 			lc.nextBSTTester();
 			break;
+
 
 		case 1110:
 			lc.delNodesTester();

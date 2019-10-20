@@ -106,3 +106,43 @@ int BinarySearchTree::maxDepth(TreeNode* node) {
 		return (left > right ? left : right);
 	}
 }
+
+void BinarySearchTree::BSTtester() {
+
+	vector<int> list = { 1, 2, 3, 4, 5 };
+	TreeNode* root = NULL;
+	BinarySearchTree bst;
+	int choice;
+
+	while (1) {
+		cout << "This is Binary Search Tree Tester\n";
+		cout << "1.    insert\n";
+		cout << "2.    print Tree\n";
+		cout << "3.    print Number of Node\n";
+		cout << "4.    print Max Depth of Tree\n";
+		cout << "5.    Check for Node in Tree\n";
+		cout << " Please chose your choise----------->";
+		cin >> choice;
+
+		switch (choice) {
+		case 1:
+			bst.insertVectorListTreeNode(root, list);
+			break;
+		case 2:
+			bst.printTreeTester(root);
+			break;
+		case 3:
+			bst.getTreeSizeTester(root);
+			break;
+		case 4:
+			bst.getTreeMaxDepthTester(root);
+			break;
+		case 5:
+			cout << " Enter the node number -->";
+			cin >> choice;
+			string s = bst.lookupTreeNode(root, choice) ? "has " : "don't have ";
+			cout << "the tree " << s << " node " << choice;
+		}
+		cout << endl;
+	}
+}

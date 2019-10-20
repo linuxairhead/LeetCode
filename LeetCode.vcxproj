@@ -154,12 +154,14 @@
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="LeetCodeArray.cpp" />
+    <ClCompile Include="LeetCodeString.cpp" />
     <ClCompile Include="LeetCodeTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="LeetCode.h" />
     <ClInclude Include="LeetCodeArray.h" />
+    <ClInclude Include="LeetCodeString.h" />
     <ClInclude Include="LeetCodeTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

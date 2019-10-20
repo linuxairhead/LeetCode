@@ -3,11 +3,13 @@ class LeetCode {
 public:
 	void searchInsertTester();
 
-	void BSTtester();
+	void basicFunctionTester();
 
 	void UniqueBSTTester();
 
 	void nextBSTTester();
+
+	void reverseStringTester();
 
 	void delNodesTester();
 }; 
