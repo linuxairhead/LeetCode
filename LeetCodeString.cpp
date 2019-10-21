@@ -10,16 +10,7 @@ void LeetCodeString::stringMessage(string s1, string s2) {
 Using For loop for vector to string and string to vector conversion
 */
 
-vector<char> LeetCodeString::stringToVector(string s) {
-	vector<char> retVector;
-
-	for (int i = 0; i < s.size(); i++)
-		retVector.push_back(s[i]);
-
-	return retVector;
-}
-
-vector<char> LeetCodeString::stringToVector(string s, bool message) {
+vector<char> LeetCodeString::stringToVector(string s, bool message = false) {
 	vector<char> retVector;
 
 	if (message)
@@ -32,16 +23,7 @@ vector<char> LeetCodeString::stringToVector(string s, bool message) {
 	return retVector;
 }
 
-string LeetCodeString::vectorToString(vector<char> v) {
-	string retString;
-
-	for (char i : v) 
-		retString.push_back(i);
-
-	return retString;
-}
-
-string LeetCodeString::vectorToString(vector<char> v, bool message) {
+string LeetCodeString::vectorToString(vector<char> v, bool message = false) {
 	string retString;
 
 	if (message)
@@ -56,12 +38,8 @@ string LeetCodeString::vectorToString(vector<char> v, bool message) {
 /*
 Using Range Constructor for vector to sting and string to vector conversion
 */
-vector<char> LeetCodeString::stringToVectorOne(string s) {
-	vector<char> retVector(s.begin(), s.end());
-	return retVector;
-}
 
-vector<char> LeetCodeString::stringToVectorOne(string s, bool message) {
+vector<char> LeetCodeString::stringToVectorOne(string s, bool message = false) {
 	if (message)
 		this->stringMessage("Using Range Constructor for string to vector conversion",
 			"vector<char> retVector(s.begin(), s.end());");
@@ -70,12 +48,7 @@ vector<char> LeetCodeString::stringToVectorOne(string s, bool message) {
 	return retVector;
 }
 
-string LeetCodeString::vectorToStringOne(vector<char> v) {
-	string retString(v.begin(), v.end());
-	return retString;
-}
-
-string LeetCodeString::vectorToStringOne(vector<char> v, bool message) {
+string LeetCodeString::vectorToStringOne(vector<char> v, bool message = false) {
 	if (message)
 		this->stringMessage("Using Range Constructor for vector to string conversion",
 			"string s(v.begin(), v.end());");
@@ -120,7 +93,7 @@ void LeetCodeString::StringTester() {
 			cout << endl;
 			break;
 		case 2:			
-			vString = this->stringToVector( "This is the string after convert from string to vector" );
+			vString = this->stringToVector( "This is the string after convert from string to vector");
 			switch (choice2) {				
 			case 1:sResult = this->vectorToString(vString, true);
 				break;

@@ -62,6 +62,7 @@ void LeetCode::nextBSTTester() {
 	cout << "There " << sResult << " next node." << endl<<endl;
 }
 
+
 void LeetCode::delNodesTester() {
 	vector<int> v = { 1, 2, 3, 4, 5, 6, 7 };
 	vector<int> dv = { 3,5 };
@@ -94,6 +95,8 @@ int main()
 		cout << "1110. Delete Node And Return Forest" << endl;
 		cout << "Please select which LeetCode would you like to test --> ";
 		cin >> choice;
+		cout << endl;
+
 		LeetCode lc;
 
 		switch (choice) {
@@ -112,7 +115,6 @@ int main()
 		case  173:
 			lc.nextBSTTester();
 			break;
-
 
 		case 1110:
 			lc.delNodesTester();
